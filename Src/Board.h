@@ -26,17 +26,17 @@
 //#define ADC_VREF	        3300
 
 // GPIO config
-//#define GPIO_USE_IRQS
-//#define GPIO_IRQ0_ENABLE
+#define GPIO_USE_IRQS
+#define GPIO_IRQ15_ENABLE
 
 // TIM config
 //#define TIM_USE_IRQS
 //#define TIM2_ENABLE
 
 // UART config
-//#define UART1_PINS		(PA9 | PA10)
-//#define UART1_AF		    GPIO_AF4_USART1
-//#define UART_BFR_SIZE     128
+#define UART1_PINS		(PA9 | PA10)
+#define UART1_AF		    GPIO_AF4_USART1
+#define UART_BFR_SIZE     128
 
 // SPI config
 //#define SPI1_PINS		    (PB3 | PB4 | PB5)
