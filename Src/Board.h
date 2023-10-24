@@ -59,7 +59,7 @@
 //#define USB_CDC_BFR_SIZE	512
 
 // TSC config
-//#define TSC_ENABLE
-//#define TSC_AF					GPIO_AF3_TSC
+#define TSC_ENABLE
+#define TSC_AF					GPIO_AF3_TSC
 
 #endif /* BOARD_H */
