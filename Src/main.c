@@ -39,7 +39,7 @@ uint32_t Percentage(uint32_t capacitance)
 	return ((Max(capacitance, MIN) - MIN) * 100) / RELATIVE_MAX;
 }
 
-Colors_t ColorForRange(uint32_t percentage)
+Colors_t ColorFromPercentage(uint32_t percentage)
 {
 	if (percentage > 40) {
 		return Color_Blue;
@@ -112,7 +112,7 @@ int main(void)
 	{
 		if (ButtonWasPressed)
 		{
-			FlashColor(ColorForRange(Percentage(Capacitance())));
+			FlashColor(ColorFromPercentage(Percentage(Capacitance())));
 //			result = Capacitance();
 //			FlashColor(ColorForRange(Percentage(result)));
 //			PrintResult(result, Percentage(result));
